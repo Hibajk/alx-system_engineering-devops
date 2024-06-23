@@ -8,11 +8,17 @@
 **Root Cause**: A misconfigured database connection pool led to a bottleneck in database queries, causing slow load times and errors.
 # TIMELINE
 10:45 AM: The issue was detected through monitoring alerts, which showed a spike in response times and error rates.
+<br>
 10:50 AM: The on-call engineer investigated the issue and noticed high CPU usage on the database servers.
+<br>
 11:00 AM: The engineer assumed the root cause was a database query optimization issue and began investigating slow queries.
+<br>
 11:30 AM: The engineer escalated the incident to the database team, who began investigating database connection issues.
+<br>
 12:00 PM: The team discovered a misconfigured database connection pool, which was causing a bottleneck in database queries.
+<br>
 12:30 PM: The team implemented a temporary fix by increasing the connection pool size.
+<br>
 1:00 PM: The issue was resolved, and load times returned to normal.
 # ROOT CAUSE AND RESOLUTION
 The root cause of the issue was a misconfigured database connection pool, which limited the number of concurrent connections to the database. This led to a bottleneck in database queries, causing slow load times and errors. The temporary fix was to increase the connection pool size, which alleviated the bottleneck and resolved the issue.
