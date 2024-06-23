@@ -1,5 +1,5 @@
 # POSTMORTEM: DATABASE CONNECTION ISSUES CAUSING SLOW LOAD TIMES
-" ISSUE SUMMARY
+`ISSUE SUMMARY`
 Duration: 2 hours 15 minutes, from 10:45 AM to 1:00 PM UTC-5 on February 10, 2023
 Impact: The website's load times were severely impacted, with 80% of users experiencing slow load times (> 10 seconds) and 20% experiencing errors. The affected service was the main website, which handles user authentication and dashboard rendering.
 Root Cause: A misconfigured database connection pool led to a bottleneck in database queries, causing slow load times and errors.
